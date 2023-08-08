@@ -1,0 +1,25 @@
+Create a jewelry store with me!
+
+CREATE TABLE jewelry (id INTEGER , name TEXT, quantity INTEGER, price INTEGER, quality TEXT);
+
+INSERT INTO jewelry VALUES (1, "DoubLe tone watch",20, 90, "good");
+INSERT INTO jewelry VALUES (2, "Virgen necklace", 7, 100, "good");
+INSERT INTO jewelry VALUES (3, "Chain bracelet", 19, 45, "great");
+INSERT INTO jewelry VALUES (4, "Dainty earrings", 20, 30, "good");
+INSERT INTO jewelry VALUES (5, "Mushroom charm", 5, 45, "good");
+INSERT INTO jewelry VALUES (6, "Passport charm", 10, 40, "good");
+INSERT INTO jewelry VALUES (7, "Cowboy hat charm", 4, 40, "good");
+INSERT INTO jewelry VALUES (8, "Charm necklace", 20, 50, "good");
+INSERT INTO jewelry VALUES (9, "Gold chain", 22, 60, "good");
+INSERT INTO jewelry VALUES (10, "Gold ring", 14, 55, "good");
+INSERT INTO jewelry VALUES (11, "Anklet", 8, 30, "good");
+INSERT INTO jewelry VALUES (12, "Bubble letter necklace", 12, 35, "good");
+INSERT INTO jewelry VALUES (13, "Bangles", 3,10, "good");
+INSERT INTO jewelry VALUES (14, "Small watch", 10, 35, "good");
+INSERT INTO jewelry VALUES (15, "Smily face charm", 8,15, "good");
+
+display quantity from smallest to biggest by using asc
+SELECT * FROM jewelry ORDER BY quantity ASC;
+
+What is the price of all the items in my store?
+SELECT SUM(price) FROM jewelry;
